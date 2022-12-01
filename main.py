@@ -31,7 +31,7 @@ def hello():
   
 @app.route("/") #Default - Show Data
 def read(): # Name of the method
-  cur = mysql.connection.cursor() #create a connection to the SQL instance
+  cur = mysql.connection.cursor() #create a connection to the SQL instance1
   cur.execute('''SELECT * FROM students''') # execute an SQL statment
   rv = cur.fetchall() #Retreive all rows returend by the SQL statment
   Results=[]
