@@ -19,7 +19,7 @@ def add():
   name = request.args.get('name')
   email = request.args.get('email')
   cur = mysql.connection.cursor() #create a connection to the SQL instance
-  s='''INSERT INTO students(studentName, email) VALUES('{}','{}');'''.format(name,email) # kludge - use stored proc or params
+  s='''INSERT INTO students(studentName, email) VALUES('{}','{}');'''.format(name,email) # kludge1 - use stored proc or params
   cur.execute(s)
   mysql.connection.commit()
 
