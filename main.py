@@ -9,9 +9,9 @@ CORS(app)
 # My SQL Instance configurations
 # Change these details to match your instance configurations
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'helloworld'
+app.config['MYSQL_PASSWORD'] = 'user123'
 app.config['MYSQL_DB'] = 'student'
-app.config['MYSQL_HOST'] = '34.170.86.71'
+app.config['MYSQL_HOST'] = '34.105.196.206'
 mysql.init_app(app)
 
 @app.route("/add") #Add Student
